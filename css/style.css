@@ -10,10 +10,10 @@
 }
 .menu{
   
-     margin-right: 80px;
-     display: flex;
+     margin-right: 0px;
      justify-content: end;
 }
+
 .menu a{
     color: #fff;
     padding: 20px !important;
@@ -55,7 +55,7 @@
 }
 .social li a{
     color: #fff;
-    font-size: 2vw;
+    font-size: 24px;
     color: #fff;
 }
 .cont{
@@ -475,4 +475,43 @@ background: linear-gradient(170deg, rgba(216,254,250,0.2) 0%, rgba(227,208,208,0
     padding: 50px 0px;
     line-height: 30px;
     font-size: 22px;
+}
+
+.offer-container{
+    text-align: center;
+    color: #fff;
+    background: rgb(87,18,127);
+    background: linear-gradient(90deg, rgba(87,18,127,0.3) 0%, rgba(158,13,130,0.3) 55%, rgba(208,11,132,0.3) 100%);
+    padding: 50px 0px;
+}
+.offer{
+    padding: 50px 20px !important;
+}
+
+@media (max-width:1188px){
+    .menu a{
+        color: #fff;
+        padding: 15px !important;
+        font-size: 18px;
+    }
+    .search{
+       width: 150px;
+       margin-top: 25px;
+    }
+    .social ul li a{
+        font-size: 20px;
+    }
+
+}
+@media (max-width:1156px){
+    .menu a{
+        color: #fff;
+        padding: 16px !important;
+        font-size: 20px;
+    }
+}
+@media (max-width:883px){
+    .search{
+        display: none;
+    }
 }
