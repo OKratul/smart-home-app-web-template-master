@@ -7,7 +7,36 @@
     height: auto;
     width: 100%;
     padding: 30px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    justify-items: center;
+    align-items: center;
 }
+nav{
+    grid-column: auto/span 2;
+}
+
+@media (max-width:992px){
+    .header{
+        height: auto;
+        width: 100%;
+        padding: 30px 0px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px,300px));
+        justify-items: center;
+        align-items: center;
+    }
+    nav{
+        grid-column: 3/span 1;
+        position: fixed;
+        display: flex;
+    }
+    .search-bar{
+        grid-column: 2 /span 1;
+        grid-row: 1/1;
+    }
+}
+
 .menu{
   
      margin-right: 0px;
@@ -24,22 +53,16 @@
   display: flex;
   justify-content: center;
 }
-.search-bar{
-    padding: 0px 0px; 
-}
-.search-bar{
-    float: left;
-}
+
 .search{
     max-width: 100%;
     background: transparent;
     border: 1px solid #fff;
     border-radius: 25px;
-    margin-top: 35px;
 }
 .social{
-    float: right;
-    margin-top: 25px;
+  
+    
 }
 .social ul{
     margin: 0px !important;
@@ -55,15 +78,21 @@
 }
 .social li a{
     color: #fff;
-    font-size: 24px;
+    font-size: 26px;
     color: #fff;
 }
 .cont{
-    position:relative;
+    
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
 }
 .text-1{
-    position: absolute;
-    top: 15%;
     color: #fff;
     padding-left: 30px;
 }
@@ -92,9 +121,14 @@ color: #fff;
 text-decoration: none;
 
 }
-.element{
+.ele-img{
     position: relative;
-    padding: 50px 0px;
+    padding: 100px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
 }
 .ele-1{
     position: absolute;
@@ -105,11 +139,7 @@ text-decoration: none;
     left: -80px;
 }
 .text-2{
-    position: absolute;
-    top: 40%;
     color: #fff;
-    padding: 50px 50px;
-
 }
 .text-2 h1{
     font-family: 'Audiowide', cursive;
@@ -134,8 +164,12 @@ text-decoration: none;
 }
 .card-container
     {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,350px));
     padding: 100px 50px;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
     }
  .sicurity{
         text-align: center;
@@ -166,12 +200,13 @@ text-decoration: none;
         overflow: hidden;
         z-index: 10;
         border-radius: 20px !important;
+        margin-top: 25px;
     }
     .card-1{
         width: 250px;
         height: 250px;
         align-self: center;
-        z-index: 10;
+        z-index: 1;
         
     }
     .card-body{
@@ -273,9 +308,7 @@ text-decoration: none;
 }
 .card-container-2{
     padding: 100px 100px !important;
-    display: block;
-    border-radius: 25px !important;
-background: linear-gradient(170deg, rgba(216,254,250,0.2) 0%, rgba(227,208,208,0.2) 55%, rgba(157,121,121,0.2) 100%);
+    background: transparent !important;
 }
 
 
@@ -397,12 +430,13 @@ background: linear-gradient(170deg, rgba(216,254,250,0.2) 0%, rgba(227,208,208,0
     }
     
 }
-.img-layer{
-    position: absolute;
-    top: 3%;
-    left: 9%;
-    width: 410px !important;
-    height: 780px !important;
+.smrt-phone{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px, 500px));
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
 }
 .read{
     position: absolute;
@@ -414,40 +448,14 @@ background: linear-gradient(170deg, rgba(216,254,250,0.2) 0%, rgba(227,208,208,0
     border-radius: 20px;
     text-decoration: none !important;
 }
-.logo{
-    position: absolute;
-    top: 15%;
-    left: 30%;
-    animation: logo 2.5s ease-in-out infinite;
-    animation-delay: 1s;
-}
-.logo-1{
-    display: flex;
-    animation: logo 2.5s ease-in-out infinite;
-    animation-delay: 1s;
-}
-@keyframes logo{
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(0.8);
-    }
-    100%{
-        1
-    }
-}
-.smartphone-img h2{
-    position: absolute;
-    top: 27%;
-    left: 25%;
-    text-align: center;
-    color: #fff;
-    font-family: 'Audiowide', cursive;
-    font-size: 50px;
-}
-.about-us .row{
+
+.about-us {
     padding: 100px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
 }
 .about-us ul{
     padding: 0 !important;
